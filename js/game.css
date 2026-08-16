@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #050816;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    min-height: 100vh;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+
+    padding: 20px;
+
+    background-color: #111936;
+
+    border-bottom: 2px solid #00e5ff;
+}
+
+header h1 {
+
+    color: #00e5ff;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+#points {
+
+    color: #ffd166;
+}
+
+
+/* ================= GAME AREA ================= */
+
+#space {
+
+    width: 800px;
+
+    height: 500px;
+
+    background-color: #02040d;
+
+    border: 3px solid #00e5ff;
+
+    margin: 30px auto;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px #00e5ff;
+}
+
+
+/* ================= PLAYER ================= */
+
+#ship {
+
+    position: absolute;
+
+    width: 50px;
+
+    height: 50px;
+
+    left: 375px;
+
+    bottom: 20px;
+
+    font-size: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* ================= METEOR ================= */
+
+#meteor {
+
+    position: absolute;
+
+    width: 45px;
+
+    height: 45px;
+
+    left: 100px;
+
+    top: -50px;
+
+    font-size: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* ================= INSTRUCTION ================= */
+
+.instruction {
+
+    color: #9ca3af;
+
+    margin-top: 15px;
+
+    font-size: 16px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+
+    #space {
+
+        width: 90vw;
+
+        height: 500px;
+    }
+
+}
