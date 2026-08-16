@@ -1,0 +1,953 @@
+/* ==================================================
+   1. CSS VARIABLES
+================================================== */
+
+:root {
+
+    --primary: #2563eb;
+    --secondary: #16a34a;
+    --danger: #dc2626;
+
+    --dark: #172033;
+    --light: #f3f4f6;
+
+    --white: #ffffff;
+
+    --spacing: 20px;
+}
+
+
+/* ==================================================
+   2. UNIVERSAL SELECTOR
+================================================== */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==================================================
+   3. ELEMENT SELECTOR
+================================================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #eef2ff;
+
+    color: #172033;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.header {
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 40px;
+
+    border-bottom: 5px solid var(--primary);
+}
+
+.header h1 {
+
+    font-size: 40px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+.header p {
+
+    color: #cbd5e1;
+
+    margin-top: 10px;
+}
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+.navbar {
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 15px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+.navbar a {
+
+    color: var(--dark);
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Pseudo-class */
+
+.navbar a:hover {
+
+    color: var(--primary);
+
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   SECTION
+================================================== */
+
+section {
+
+    background-color: white;
+
+    margin: 30px auto;
+
+    padding: 40px;
+
+    max-width: 1100px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+section h2 {
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+
+    border-left: 5px solid var(--primary);
+
+    padding-left: 10px;
+}
+
+.description {
+
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==================================================
+   3. BOX MODEL
+================================================== */
+
+.box-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 30px;
+}
+
+
+/* Margin */
+
+.margin-box {
+
+    background-color: #f87171;
+
+    padding: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    margin: 20px;
+}
+
+
+/* Border */
+
+.border-box {
+
+    background-color: #60a5fa;
+
+    border: 8px solid #1d4ed8;
+
+    padding: 25px;
+
+    margin-top: 15px;
+}
+
+
+/* Padding */
+
+.padding-box {
+
+    background-color: #86efac;
+
+    padding: 25px;
+}
+
+
+/* Content */
+
+.content-box {
+
+    background-color: #fde047;
+
+    width: 120px;
+
+    height: 70px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: black;
+}
+
+
+/* ==================================================
+   4. WIDTH AND HEIGHT
+================================================== */
+
+.size-container {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.small-box {
+
+    width: 100px;
+
+    height: 80px;
+
+    background-color: #f87171;
+
+    padding: 10px;
+}
+
+.medium-box {
+
+    width: 200px;
+
+    height: 120px;
+
+    background-color: #60a5fa;
+
+    padding: 10px;
+}
+
+.large-box {
+
+    width: 300px;
+
+    height: 160px;
+
+    background-color: #4ade80;
+
+    padding: 10px;
+}
+
+
+/* ==================================================
+   5. DISPLAY
+================================================== */
+
+.display-demo {
+
+    border: 2px dashed #64748b;
+
+    padding: 20px;
+}
+
+
+/* block */
+
+.block-example {
+
+    display: block;
+
+    background-color: #fca5a5;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+/* inline */
+
+.inline-example {
+
+    display: inline;
+
+    background-color: #93c5fd;
+
+    padding: 10px;
+
+    /*
+       width and height don't properly apply
+       to normal inline elements
+    */
+}
+
+
+/* inline-block */
+
+.inline-block-example {
+
+    display: inline-block;
+
+    background-color: #86efac;
+
+    width: 120px;
+
+    height: 50px;
+
+    padding: 10px;
+
+    margin: 10px;
+}
+
+
+/* ==================================================
+   6. POSITION
+================================================== */
+
+.position-parent {
+
+    width: 500px;
+
+    height: 250px;
+
+    background-color: #e2e8f0;
+
+    margin: auto;
+
+    position: relative;
+
+    border: 3px solid #475569;
+}
+
+
+/* Static */
+
+.static-box {
+
+    background-color: #f87171;
+
+    padding: 15px;
+
+    width: 100px;
+}
+
+
+/* Relative */
+
+.relative-box {
+
+    background-color: #4ade80;
+
+    padding: 15px;
+
+    width: 100px;
+
+    position: relative;
+
+    left: 50px;
+
+    top: 20px;
+}
+
+
+/* Absolute */
+
+.absolute-box {
+
+    background-color: #60a5fa;
+
+    padding: 15px;
+
+    width: 120px;
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 20px;
+}
+
+
+.position-info {
+
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   7. FLEXBOX
+================================================== */
+
+.flex-container {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    background-color: #e0e7ff;
+
+    padding: 30px;
+}
+
+
+.flex-item {
+
+    width: 100px;
+
+    height: 100px;
+
+    background-color: var(--primary);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+
+    border-radius: 10px;
+}
+
+
+/* ==================================================
+   8. FLEX DIRECTION
+================================================== */
+
+.direction-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.direction-box {
+
+    background-color: var(--secondary);
+
+    color: white;
+
+    width: 100px;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ==================================================
+   9. GRID
+================================================== */
+
+.grid-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.grid-item {
+
+    background-color: #7c3aed;
+
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    font-size: 20px;
+}
+
+
+/* ==================================================
+   10. TEXT PROPERTIES
+================================================== */
+
+.text-demo {
+
+    background-color: #f8fafc;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+
+.text-demo h3 {
+
+    font-size: 28px;
+
+    color: #7c3aed;
+}
+
+
+.uppercase {
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+}
+
+
+.underline {
+
+    text-decoration: underline;
+
+    text-decoration-color: red;
+
+    text-decoration-thickness: 2px;
+}
+
+
+.spacing {
+
+    letter-spacing: 3px;
+
+    word-spacing: 8px;
+
+    line-height: 2;
+}
+
+
+/* ==================================================
+   11. BORDER AND SHADOW
+================================================== */
+
+.shadow-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+}
+
+
+.shadow-box {
+
+    width: 200px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 2px solid var(--primary);
+
+    border-radius: 15px;
+
+    box-shadow:
+        10px 10px 20px rgba(0,0,0,0.25);
+
+    text-align: center;
+}
+
+
+.rounded-box {
+
+    width: 200px;
+
+    padding: 30px;
+
+    background-color: #fde047;
+
+    border:
+
+        5px solid #ca8a04;
+
+    border-radius: 50px;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   12. OVERFLOW
+================================================== */
+
+.overflow-box {
+
+    width: 300px;
+
+    height: 100px;
+
+    border: 3px solid var(--danger);
+
+    padding: 15px;
+
+    margin: auto;
+
+    overflow: auto;
+}
+
+
+/* ==================================================
+   13. PSEUDO CLASSES
+================================================== */
+
+.pseudo-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.hover-button {
+
+    padding: 15px 25px;
+
+    border: none;
+
+    background-color: var(--primary);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* :hover */
+
+.hover-button:hover {
+
+    background-color: var(--secondary);
+
+    transform: scale(1.1);
+}
+
+
+/* :focus */
+
+.focus-input {
+
+    padding: 15px;
+
+    border: 2px solid #aaa;
+}
+
+
+.focus-input:focus {
+
+    border-color: var(--primary);
+
+    outline: none;
+
+    box-shadow: 0 0 5px var(--primary);
+}
+
+
+/* :nth-child */
+
+.list-demo {
+
+    margin: 30px auto;
+
+    width: 300px;
+}
+
+
+.list-demo li {
+
+    padding: 10px;
+
+    list-style-position: inside;
+}
+
+
+/* Every second item */
+
+.list-demo li:nth-child(even) {
+
+    background-color: #dbeafe;
+}
+
+
+/* ==================================================
+   14. CALC()
+================================================== */
+
+.calc-box {
+
+    width: calc(100% - 40px);
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: #c4b5fd;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   15. Z-INDEX
+================================================== */
+
+.z-container {
+
+    position: relative;
+
+    height: 200px;
+
+    width: 350px;
+
+    margin: auto;
+}
+
+
+.z-one {
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 120px;
+
+    background-color: #f87171;
+
+    padding: 20px;
+
+    z-index: 1;
+
+    left: 40px;
+
+    top: 30px;
+}
+
+
+.z-two {
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 120px;
+
+    background-color: #60a5fa;
+
+    padding: 20px;
+
+    z-index: 2;
+
+    left: 100px;
+
+    top: 70px;
+}
+
+
+/* ==================================================
+   16. STICKY
+================================================== */
+
+.sticky-demo {
+
+    position: sticky;
+
+    top: 70px;
+
+    background-color: #facc15;
+
+    padding: 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    z-index: 50;
+}
+
+
+/* ==================================================
+   17. FIXED
+================================================== */
+
+.fixed-button {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    background-color: var(--danger);
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 50%;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+/* ==================================================
+   18. FOOTER
+================================================== */
+
+footer {
+
+    background-color: var(--dark);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+/* ==================================================
+   19. PSEUDO ELEMENT
+================================================== */
+
+footer h3::before {
+
+    content: "★ ";
+
+    color: #facc15;
+}
+
+
+/* ==================================================
+   20. RESPONSIVE DESIGN
+================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .size-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .position-parent {
+
+        width: 100%;
+    }
+
+
+    .grid-container {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .shadow-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .header h1 {
+
+        font-size: 28px;
+    }
+
+
+    section {
+
+        padding: 25px;
+    }
+
+
+    .grid-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
