@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Concepts Demonstration</title>
+
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <h1>CSS Concepts</h1>
+
+        <p>Basic CSS Techniques Demonstration</p>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <a href="#boxmodel">Box Model</a>
+        <a href="#display">Display</a>
+        <a href="#position">Position</a>
+        <a href="#flex">Flexbox</a>
+        <a href="#grid">Grid</a>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= BOX MODEL ================= -->
+
+        <section id="boxmodel">
+
+            <h2>1. CSS Box Model</h2>
+
+            <p class="description">
+                Every HTML element consists of content, padding,
+                border and margin.
+            </p>
+
+            <div class="box-container">
+
+                <div class="margin-box">
+
+                    <span>Margin</span>
+
+                    <div class="border-box">
+
+                        <span>Border</span>
+
+                        <div class="padding-box">
+
+                            <span>Padding</span>
+
+                            <div class="content-box">
+                                Content
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WIDTH HEIGHT ================= -->
+
+        <section>
+
+            <h2>2. Width and Height</h2>
+
+            <div class="size-container">
+
+                <div class="small-box">
+                    Width: 100px
+                </div>
+
+                <div class="medium-box">
+                    Width: 200px
+                </div>
+
+                <div class="large-box">
+                    Width: 300px
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DISPLAY ================= -->
+
+        <section id="display">
+
+            <h2>3. Display Property</h2>
+
+            <p class="description">
+                The display property controls how an element
+                behaves in the layout.
+            </p>
+
+            <div class="display-demo">
+
+                <div class="block-example">
+                    Block
+                </div>
+
+                <span class="inline-example">
+                    Inline
+                </span>
+
+                <span class="inline-example">
+                    Inline
+                </span>
+
+                <div class="inline-block-example">
+                    Inline-block
+                </div>
+
+                <div class="inline-block-example">
+                    Inline-block
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POSITION ================= -->
+
+        <section id="position">
+
+            <h2>4. Position Property</h2>
+
+            <div class="position-parent">
+
+                <div class="static-box">
+                    Static
+                </div>
+
+                <div class="absolute-box">
+                    Absolute
+                </div>
+
+                <div class="relative-box">
+                    Relative
+                </div>
+
+            </div>
+
+            <div class="position-info">
+
+                <p><b>Static:</b> Normal document position</p>
+
+                <p><b>Relative:</b> Positioned relative to itself</p>
+
+                <p><b>Absolute:</b> Positioned relative to parent</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FLEXBOX ================= -->
+
+        <section id="flex">
+
+            <h2>5. Flexbox</h2>
+
+            <p class="description">
+                Flexbox is used to arrange elements in rows or columns.
+            </p>
+
+            <div class="flex-container">
+
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FLEX DIRECTION ================= -->
+
+        <section>
+
+            <h2>6. Flex Direction</h2>
+
+            <div class="direction-container">
+
+                <div class="direction-box">A</div>
+                <div class="direction-box">B</div>
+                <div class="direction-box">C</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GRID ================= -->
+
+        <section id="grid">
+
+            <h2>7. CSS Grid</h2>
+
+            <div class="grid-container">
+
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TEXT ================= -->
+
+        <section>
+
+            <h2>8. Text Styling</h2>
+
+            <div class="text-demo">
+
+                <h3>CSS Text Properties</h3>
+
+                <p>
+                    This paragraph demonstrates
+                    <strong>font size</strong>,
+                    <em>font style</em>,
+                    text alignment and spacing.
+                </p>
+
+                <p class="uppercase">
+                    Text Transform Example
+                </p>
+
+                <p class="underline">
+                    Text Decoration Example
+                </p>
+
+                <p class="spacing">
+                    Letter spacing and line height example
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SHADOW ================= -->
+
+        <section>
+
+            <h2>9. Border and Shadow</h2>
+
+            <div class="shadow-container">
+
+                <div class="shadow-box">
+                    Box Shadow
+                </div>
+
+                <div class="rounded-box">
+                    Border Radius
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OVERFLOW ================= -->
+
+        <section>
+
+            <h2>10. Overflow</h2>
+
+            <div class="overflow-box">
+
+                This is a very long text used to demonstrate
+                the CSS overflow property. The content is larger
+                than the available area.
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PSEUDO CLASSES ================= -->
+
+        <section>
+
+            <h2>11. Pseudo Classes</h2>
+
+            <div class="pseudo-container">
+
+                <button class="hover-button">
+                    Hover Me
+                </button>
+
+                <input
+                    class="focus-input"
+                    type="text"
+                    placeholder="Click inside me"
+                >
+
+            </div>
+
+            <ul class="list-demo">
+
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================= CALC ================= -->
+
+        <section>
+
+            <h2>12. CSS calc()</h2>
+
+            <div class="calc-box">
+                Width = 100% - 40px
+            </div>
+
+        </section>
+
+
+        <!-- ================= Z INDEX ================= -->
+
+        <section>
+
+            <h2>13. Z-Index</h2>
+
+            <div class="z-container">
+
+                <div class="z-one">
+                    Box 1
+                </div>
+
+                <div class="z-two">
+                    Box 2
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POSITIONING ================= -->
+
+        <section>
+
+            <h2>14. Fixed and Sticky Position</h2>
+
+            <p class="sticky-demo">
+                I am Sticky
+            </p>
+
+            <p>
+                Scroll the page to observe the sticky element.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>CSS Learning Page</h3>
+
+        <p>
+            Demonstrating basic CSS concepts and techniques.
+        </p>
+
+    </footer>
+
+
+    <!-- Fixed element -->
+
+    <div class="fixed-button">
+        Fixed
+    </div>
+
+
+</body>
+
+</html>
